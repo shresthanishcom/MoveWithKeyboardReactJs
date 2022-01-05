@@ -1,3 +1,107 @@
+.header {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: minmax(150px, 200px) minmax(400px, 1fr) minmax(50px, 100px);
+      grid-template-columns: minmax(150px, 200px) minmax(400px, 1fr) minmax(50px, 100px);
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    -ms-grid-columns: minmax(100px, 1fr) 1fr 1fr;
+        grid-template-columns: minmax(100px, 1fr) 1fr 1fr;
+  }
+}
+
+.logo img {
+  width: 100%;
+}
+
+.links {
+  padding: 1rem;
+}
+
+.links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links ul li {
+  margin: 0px 5px;
+  font-size: medium;
+  list-style: none;
+}
+
+@media screen and (max-width: 700px) {
+  .links {
+    display: none;
+  }
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+}
+
+.toggleBtn {
+  position: absolute;
+  right: 0px;
+}
+
+@media screen and (min-width: 700px) {
+  .toggleBtn {
+    display: none;
+  }
+}
+
+.pic-content {
+  height: 400px;
+  width: 100%;
+  background-image: url("https://i.ibb.co/zGSDGCL/slide1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+.pic-detail {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.pic-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+button {
+  margin: 20px;
+  padding: 15px;
+  color: white;
+  background-color: black;
+  font-weight: 600;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -6,17 +110,7 @@
 }
 
 .container {
-  width: 90vw;
+  width: 80vw;
   margin: auto;
-}
-
-.links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.links ul li {
-  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */

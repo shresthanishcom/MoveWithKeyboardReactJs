@@ -1,4 +1,5 @@
 import react from "react";
+import "./Css/main.css";
 
 export default function Header() {
   return (
@@ -16,7 +17,13 @@ export default function Header() {
           <li>Support</li>
         </ul>
       </div>
-      <div className="navigation">something</div>
+      <div className="navigation">
+        <i className="fas fa-search"></i>
+        <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+      </div>
+      <div className="toggleBtn">
+        <i className="fa fa-bars" aria-hidden="true"></i>
+      </div>
     </div>
   );
 }

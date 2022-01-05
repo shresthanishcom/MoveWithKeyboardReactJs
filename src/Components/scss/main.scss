@@ -1,3 +1,5 @@
+@import "_header";
+@import "_picContent";
 * {
   margin: 0px;
   padding: 0px;
@@ -5,15 +7,6 @@
 }
 
 .container {
-  width: 90vw;
+  width: 80vw;
   margin: auto;
-}
-
-.links {
-  display: flex;
-  ul {
-    li {
-      list-style: none;
-    }
-  }
 }

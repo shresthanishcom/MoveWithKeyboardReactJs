@@ -1,0 +1,31 @@
+.pic-content {
+  height: 400px;
+  width: 100%;
+  background-image: url("https://i.ibb.co/zGSDGCL/slide1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.pic-detail {
+  grid-row: 2/3;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.pic-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+button {
+  margin: 20px;
+  padding: 15px;
+  color: white;
+  background-color: black;
+  font-weight: 600;
+}
