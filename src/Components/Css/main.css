@@ -102,6 +102,29 @@ button {
   font-weight: 600;
 }
 
+.box-container {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  background-color: rebeccapurple;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 200px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+}
+
+.picItems-box {
+  height: 400px;
+  width: 400px;
+}
+
+.picItems-pic {
+  height: 100px;
+  width: 100%;
+  border: 2px solid red;
+}
+
 * {
   margin: 0px;
   padding: 0px;
