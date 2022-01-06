@@ -11,3 +11,14 @@
   width: 80vw;
   margin: auto;
 }
+
+span {
+  margin: 3px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+span:first-child {
+  margin: 3px;
+}

@@ -1,14 +1,33 @@
 .card-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  margin: 10px 0px;
+  height: max-content;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(125px, 400px));
+  grid-gap: 2px;
+  @media screen and (max-width: 628px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 }
 .card-box {
-  height: max-content;
+  height: 100%;
   width: 100%;
-  border: 2px solid red;
 }
 .card-image {
-  height: 200px;
   width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.card-title {
+  font-size: large;
+  font-weight: 700;
+}
+
+a {
+  color: steelblue;
+  font-weight: 600;
+  font-size: larger;
+  text-decoration: none;
 }
