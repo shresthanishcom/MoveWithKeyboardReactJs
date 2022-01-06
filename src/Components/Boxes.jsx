@@ -4,24 +4,24 @@ import PicItems from "./PicItems";
 export default function Boxes() {
   return (
     <React.Fragment>
-      <div className="box-container">
+      <div className="card-container">
         <PicItems
-          picture="card1.png"
+          picture="./pictures/card1.png"
           title="something"
           description="hellowlakjslfjjsdfj"
         />
         <PicItems
-          picture="card1.png"
+          picture="./pictures/card1.png"
           title="something"
           description="hellowlakjslfjjsdfj"
         />
         <PicItems
-          picture="card1.png"
+          picture="./pictures/card1.png"
           title="something"
           description="hellowlakjslfjjsdfj"
         />
         <PicItems
-          picture="card1.png"
+          picture="./pictures/card1.png"
           title="something"
           description="hellowlakjslfjjsdfj"
         />

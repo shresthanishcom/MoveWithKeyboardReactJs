@@ -1,17 +1,14 @@
-.box-container {
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card-box {
   height: max-content;
   width: 100%;
-  background-color: rebeccapurple;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
-}
-
-.picItems-box {
-  height: 400px;
-  width: 400px;
-}
-.picItems-pic {
-  height: 100px;
-  width: 100%;
   border: 2px solid red;
+}
+.card-image {
+  height: 200px;
+  width: 100%;
 }
